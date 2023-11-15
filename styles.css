@@ -1,0 +1,60 @@
+/* Common Styles for All Pages */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Creative yet easily readable font */
+    background-color: #0f0f0f; /* Dark background color */
+    color: #fff; /* Text color */
+    padding-top: 50px; /* Adjust body padding for the fixed navbar */
+  }
+  
+  header {
+    background-color: #000; /* Black navbar */
+    padding: 15px 0;
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Navbar spans the entire width */
+    top: 0; /* Fixed to the top */
+    z-index: 1000; /* Ensure the navbar appears on top of other content */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centering the navbar links */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #66ff66; /* Light Green */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  nav ul li a:hover {
+    color: #00cc00; /* Darker Green on hover */
+  }
+  
+  /* Ensure content starts below the fixed navbar */
+  section {
+    padding-top: 60px; /* Adjust padding to prevent content from being hidden behind the navbar */
+  }
+  
+  /* Specific styles for each page */
+  /* ... */
+
+/* Styles for Contact Us Page */
+.contact {
+  padding: 50px;
+  text-align: center; /* Center align content */
+}
+
+.contact form {
+  display: inline-block; /* Display the form as inline block */
+  text-align: left; /* Align form content to the left within the centered block */
+  margin: 0 auto; /* Center the form horizontally */
+  max-width: 400px; /* Set maximum width for better readability */
+}
