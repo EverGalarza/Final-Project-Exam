@@ -3,33 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <title>About - GameGo</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gamereview.html">Game Reviews</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="wishlist.html">Wishlist</a></li>
-        <li><a href="signup.html">Signup</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <!-- Add other pages to the navigation -->
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">GameGo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gamereview.html">Game Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html">Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <!-- Add other pages to the navigation -->
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   
   <section class="about">
-    <h1>About GameGo</h1>
-    <p>Welcome to GameGo, your ultimate destination for gaming products and accessories. Our mission is to provide high-quality gaming gear to all gamers, from casual players to hardcore enthusiasts. At GameGo, we believe in...</p>
-    <!-- Add more content specific to the About page -->
+    <div class="container">
+      <h1>About GameGo</h1>
+      <p>Welcome to GameGo, your ultimate destination for gaming products and accessories. Our mission is to provide high-quality gaming gear to all gamers, from casual players to hardcore enthusiasts. At GameGo, we believe in...</p>
+      <!-- Add more content specific to the About page -->
+    </div>
   </section>
 
   <footer>
     <!-- Footer content -->
   </footer>
+
+  <!-- Bootstrap JS and jQuery (Optional for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -3,42 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <title>Shop - GameGo</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional CSS styles specific to this page can be placed here */
+    /* Dark mode theme */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+
+    .navbar {
+      background-color: #333333; /* Dark gray navbar */
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #ffffff; /* White color for brand */
+    }
+
+    .navbar-nav .nav-link {
+      color: #f0f0f0; /* Light gray color for links */
+    }
+
+    .products {
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .products h1 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .products p {
+      font-size: 18px;
+      color: #b0b0b0; /* Lighter gray color */
+    }
+
+    .product {
+      margin-bottom: 40px;
+      padding: 30px;
+      background-color: #333333; /* Dark gray background for products */
+      box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.1); /* White box shadow effect */
+      border-radius: 10px;
+    }
+
+    .product h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #ffffff; /* White color for titles */
+    }
+
+    .product p {
+      color: #cccccc; /* Light gray color for content */
+    }
+  </style>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="gamereview.html">Game Reviews</a></li>
-        <li><a href="cart.html">Cart</a></li>
-        <li><a href="wishlist.html">Wishlist</a></li>
-        <li><a href="signup.html">Signup</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <!-- Add other pages to the navigation -->
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">GameGo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gamereview.html">Game Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="wishlist.html">Wishlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <!-- Add other pages to the navigation -->
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
   
-  <section class="products">
-    <h1>Explore Our Shop</h1>
-    <p>Discover a wide range of gaming products, including consoles, games, accessories, and more at GameGo's online store. With our curated selection of products...</p>
-    <!-- Product listings and details go here -->
-    <div class="product">
-      <h2>Product Title</h2>
-      <p>Description and details of the product...</p>
-    </div>
-    <div class="product">
-      <h2>Another Product Title</h2>
-      <p>Description and details of another product...</p>
-    </div>
-    <!-- Add more product sections -->
-  </section>
+  <main>
+    <section class="products">
+      <div class="container">
+        <h1>Explore Our Shop</h1>
+        <p>Discover a wide range of gaming products, including consoles, games, accessories, and more at GameGo's online store. With our curated selection of products...</p>
+        <!-- Product listings and details go here -->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="product">
+              <h2>Product Title 1</h2>
+              <p>Description and details of the product...</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="product">
+              <h2>Product Title 2</h2>
+              <p>Description and details of another product...</p>
+            </div>
+          </div>
+          <!-- Add more product sections -->
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <!-- Footer content -->
   </footer>
+
+  <!-- Bootstrap JS and jQuery (Optional for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
