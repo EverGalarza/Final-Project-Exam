@@ -58,3 +58,38 @@ body {
   margin: 0 auto; /* Center the form horizontally */
   max-width: 400px; /* Set maximum width for better readability */
 }
+
+/* Custom styles for the Game Library section */
+.game-library {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.game-library h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #343a40; /* Dark color for heading */
+}
+
+.game-library p {
+  color: #6c757d; /* Lighter color for paragraph */
+}
+
+.game-library .card {
+  background-color: #fff; /* White background for card */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.library-additional-info {
+  margin-top: 40px;
+}
+
+.library-additional-info h2 {
+  color: #343a40; /* Dark color for additional info heading */
+  margin-bottom: 20px;
+}
+
+.library-additional-info p {
+  color: #6c757d; /* Lighter color for additional info text */
+}
