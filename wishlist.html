@@ -4,39 +4,25 @@
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+   
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    
+   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <title>Wishlist - GameGo</title>
 
   <link rel = "icon" href="c:\Users\Ever.Galarza\Downloads\Logo2.jpg" type = "image/x-icon">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Additional CSS styles specific to this page can be placed here */
-    /* Adjustments for the sections */
-    .wishlist {
-      padding: 50px 0;
-      text-align: center;
-    }
-
-    .wishlist-item {
-      margin-bottom: 30px;
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 5px;
-    }
-  </style>
+  <link rel="stylesheet" href="wishlist.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">GameGo</a>
+        <a class="navbar-brand" href="home.html"> <img class="logo" src="c:\Users\Ever.Galarza\Downloads\New Logo.png"> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,7 +33,6 @@
               <li><a href="gamereview.html"><i class="bi-stars"></i> Reviews</a></li>
               <li><a href="about.html"><i class="bi-info-circle"></i> About Us</a></li>
               <li><a href="contact.html"><i class="bi-telephone"></i> Contact Us</a></li>
-              <li><a href="signup.html"><i class="bi bi-pencil-square"></i> Sign Up</a></li>
               <li><a href="wishlist.html"><i class="bi bi-card-list"></i> Wishlist</a></li>
               <li><a href="cart.html"><i class="bi-cart"></i> Cart</a></li>
             <!-- Add other pages to the navigation -->
@@ -56,35 +41,26 @@
       </div>
     </nav>
   </header>
-  
-  <main>
-    <section class="wishlist">
-      <div class="container">
-        <h1>Your Wishlist</h1>
-        <p>Save and manage your favorite items in your wishlist for future purchases.</p>
-        <!-- Wishlist items go here -->
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <div class="wishlist-item">
-              <h2>Product Title 1</h2>
-              <p>Description and details of the product added to the wishlist...</p>
-            </div>
-            <div class="wishlist-item">
-              <h2>Another Product Title</h2>
-              <p>Description and details of another product in the wishlist...</p>
-            </div>
-            <!-- Add more wishlist item sections -->
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section class="sec"></section>
+  <script>
+    for(let i=1; i<=85; i++){
+      let stars = document.createElement('span');
+      stars.classList.add('star');
+      let size = Math.random() * 20;
+      stars.style.fontSize = 10 + size+'px';
+      stars.style.left = Math.random() * + innerWidth + 'px';
+      stars.style.top = Math.random() * + innerHeight + 'px';
+      stars.style.filter = `hue-rotate(${i * 5}deg)`;
+      document.querySelector('.sec').appendChild(stars);
+    }
+    function animateStars(){
+      let AllStars = document.querySelectorAll('.star');
+      let num = Math.floor(Math.random()*AllStars.length);
+      AllStars[num].classList.toggle('animate');
+    }
+    setInterval(animateStars,15)
+  </script>
 
-  <footer>
-    <!-- Footer content -->
-  </footer>
-
-  <!-- Bootstrap JS and jQuery (Optional for Bootstrap components) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

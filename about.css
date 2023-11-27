@@ -1,0 +1,306 @@
+header {
+    background-color: #000; /* Black navbar */
+    padding: 15px 0;
+    position: fixed; /* Fixed positioning */
+    width: 100%; /* Navbar spans the entire width */
+    top: 0; /* Fixed to the top */
+    z-index: 1000; /* Ensure the navbar appears on top of other content */
+  }
+ 
+
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centering the navbar links */
+  }
+ 
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+ 
+  nav ul li a {
+    color: #66ff66; /* Light Green */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+ 
+  nav ul li a:hover {
+    color: #00cc00; /* Darker Green on hover */
+  }
+ 
+  .navbar-nav {
+    margin-right: 100px; /* Increase margin between navbar elements */
+  }
+
+  .navbar {
+    background-color: #000; /* Set full black background color for the navbar */
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 10px; /* Adjust the margin between each navbar item */
+  }
+
+  .navbar-nav .nav-link {
+    color: green; /* Set the font color for inactive elements */
+  }
+
+  .navbar-nav .nav-link.active {
+    color: teal; /* Set the font color for the active element */
+  }
+
+  .navbar-brand img {
+    margin-right: 20px; /* Adjust margin to move the logo more to the left */
+  }
+  /* Ensure content starts below the fixed navbar */
+  section {
+    padding-top: 60px; /* Adjust padding to prevent content from being hidden behind the navbar */
+  }
+ 
+  .logo{
+    width: 160px;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+
+/* ... (your existing styles) ... */
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  padding-top: 50px;
+}
+
+/* ... (other styles) ... */
+
+.about {
+  background: black;
+  padding: 35px;
+  margin: 0;
+  text-align: center;
+  position: relative; /* Add relative positioning */
+  z-index: 100; /* Set a higher z-index to make it appear above the back section */
+}
+
+/* ... (other styles) ... */
+
+/* Styles for the animated background */
+.layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* ... (other styles) ... */
+}
+
+/* ... (your existing styles) ... */
+
+
+.about h1 {
+  font-family: 'Your Professional Font', sans-serif; /* Add the name of the professional font */
+  /* You may need to import the font using @import in a separate CSS file */
+  font-size: 45px; /* Set the font size to your desired value */
+  margin: 0; /* Remove margin for the heading */
+  position: relative; /* Enable positioning */
+  top: 20px; /* Adjust the y value to move the text up or down */
+  color: #00ff00; /* Neon green color */
+text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Neon green shadow effect */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #25252b;
+  z-index: 100;
+}
+
+body.box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #25252b;
+    z-index: 100;
+  }
+
+  body.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #25252b;
+    z-index: 100;
+  }
+
+  body.box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #25252b;
+    z-index: 100;
+  }
+ 
+.box {
+    position: absolute;
+  top: 250px;
+  right: 100px;
+  width: 400px;
+  height: 400px;
+  z-index: 60;
+  background: repeating-conic-gradient(from var(--a),#00ff00 0%, #00ff00 5%, transparent 5%, transparent 40%, #00ff00 50%);
+  animation: animate 4s linear infinite;
+  border-radius: 20px;
+}
+.box1 {
+    position: absolute;
+    top: 730px;
+    right: 100px;
+  width: 400px;
+  height: 400px;
+  z-index: 60;
+  background: repeating-conic-gradient(from var(--a),#00ff00 0%, #00ff00 5%, transparent 5%, transparent 40%, #00ff00 50%);
+  animation: animate 4s linear infinite;
+}
+.box2 {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+  width: 400px;
+  height: 400px;
+  z-index: 60;
+  background: repeating-conic-gradient(from var(--a),#00ff00 0%, #00ff00 5%, transparent 5%, transparent 40%, #00ff00 50%);
+  animation: animate 4s linear infinite;
+}
+.box3 {
+    position: absolute;
+    top: 730px;
+    left: 100px;
+  width: 400px;
+  height: 400px;
+  z-index: 60;
+  background: repeating-conic-gradient(from var(--a),#00ff00 0%, #00ff00 5%, transparent 5%, transparent 40%, #00ff00 50%);
+  animation: animate 4s linear infinite;
+}
+@property --a
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate
+{
+    0%{
+        --a: 0deg;
+    }
+    100%{
+        --a: 360deg;
+    }
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+  top: 2px;
+  right: 4px;
+    width: 400px;
+  height: 400px;
+  background: repeating-conic-gradient(from var(--a),#0059ff 0%, #0059ff 5%, transparent 5%, transparent 40%, #0059ff 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  border-radius: 20px;
+}
+.box::after{
+    content: "One of the key pillars of GAMEGO's philosophy is speed. We pride ourselves on delivering your orders with lightning-fast efficiency, ensuring that you receive your gaming essentials in record time. Our streamlined and optimized processes allow us to dispatch orders swiftly, so you can dive into your gaming adventures without unnecessary delays. At GAMEGO, we recognize that time is of the essence, and our commitment to prompt and reliable service sets us apart in the gaming retail landscape." ;
+    color: #00cc00;
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    inset: 8px;
+    background: #2d2d39;
+    border-radius: 15px;
+    border: 8px solid #25252b;
+}
+
+.box1::before{
+    content: "";
+    position: absolute;
+  top: 2px;
+  right: 4px;
+    width: 400px;
+  height: 400px;
+  background: repeating-conic-gradient(from var(--a),#0059ff 0%, #0059ff 5%, transparent 5%, transparent 40%, #0059ff 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  border-radius: 20px;
+}
+.box1::after{
+    content: "What sets GAMEGO apart is our dedication to fostering a vibrant gaming community. Through regular promotions, giveaways, and engaging content, we aim to connect with gamers worldwide. Our goal is not just to be a retailer but a trusted companion on your gaming journey. With GAMEGO, you're not just purchasing products; you're joining a community that shares your passion for gaming. Explore, play, and conquer with GAMEGO where affordability, speed, and quality converge to enhance your gaming experience." ;
+    color: #00cc00;
+    text-align: center;
+    font-size: 19px;
+    position: absolute;
+    inset: 8px;
+    background: #2d2d39;
+    border-radius: 15px;
+    border: 8px solid #25252b;
+}
+
+.box2::before{
+    content: '';
+    position: absolute;
+  top: 2px;
+  right: 4px;
+    width: 400px;
+  height: 400px;
+  background: repeating-conic-gradient(from var(--a),#0059ff 0%, #0059ff 5%, transparent 5%, transparent 40%, #0059ff 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  border-radius: 20px;
+}
+.box2::after{
+    content: "Introducing GAMEGO, a revolutionary and fictional company that stands at the forefront of the gaming industry. At GAMEGO, our mission is to provide gamers with unparalleled access to high-quality game-related items at unbelievably affordable prices. We understand the passion and excitement that gaming brings to people's lives, and we strive to make the gaming experience even more enjoyable by offering a diverse range of products. Whether you're a casual gamer or a hardcore enthusiast, GAMEGO is your go-to destination for an extensive selection of gaming accessories, merchandise, and gear." ;
+    color: #00cc00;
+    text-align: center;
+    font-size: 17.5px;
+    position: absolute;
+    inset: 8px;
+    background: #2d2d39;
+    border-radius: 15px;
+    border: 8px solid #25252b;
+}
+
+.box3::before{
+    content: '';
+    position: absolute;
+  top: 2px;
+  right: 4px;
+    width: 400px;
+  height: 400px;
+  background: repeating-conic-gradient(from var(--a),#0059ff 0%, #0059ff 5%, transparent 5%, transparent 40%, #0059ff 50%);
+  animation: animate 4s linear infinite;
+  animation-delay: -1s;
+  border-radius: 20px;
+}
+.box3::after{
+    content: "Quality is the cornerstone of GAMEGO's offerings. We understand the importance of durable and reliable gaming gear, and that's why we source our products from reputable manufacturers known for their commitment to excellence. From controllers and headsets to gaming peripherals and collectibles, each item in our inventory undergoes rigorous quality checks to meet the highest standards. At GAMEGO, we believe that every gamer deserves top-notch equipment without breaking the bank." ;
+    color: #00cc00;
+    text-align: center;
+    font-size: 19.2px;
+    position: absolute;
+    inset: 8px;
+    background: #2d2d39;
+    border-radius: 15px;
+    border: 8px solid #25252b;
+}

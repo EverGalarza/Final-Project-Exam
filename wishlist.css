@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Creative yet easily readable font */
+  background-color: #0f0f0f; /* Dark background color */
+  color: #222; /* Text color */
+  padding-top: 50px; /* Adjust body padding for the fixed navbar */
+}
+
+header {
+  background-color: #0f0f0f; /* Black navbar */
+  padding: 15px 0;
+  position: fixed; /* Fixed positioning */
+  width: 100%; /* Navbar spans the entire width */
+  top: 0; /* Fixed to the top */
+  z-index: 1000; /* Ensure the navbar appears on top of other content */
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Centering the navbar links */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #66ff66; /* Light Green */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+  color: #00cc00; /* Darker Green on hover */
+}
+
+.navbar-nav {
+  margin-right: 100px; /* Increase margin between navbar elements */
+}
+
+.navbar {
+  background-color: #0f0f0f; /* Set full black background color for the navbar */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust the margin between each navbar item */
+}
+
+.navbar-nav .nav-link {
+  color: green; /* Set the font color for inactive elements */
+}
+
+.navbar-nav .nav-link.active {
+  color: teal; /* Set the font color for the active element */
+}
+
+.navbar-brand img {
+  margin-right: 20px; /* Adjust margin to move the logo more to the left */
+}
+/* Ensure content starts below the fixed navbar */
+section {
+  padding-top: 90px; /* Adjust padding to prevent content from being hidden behind the navbar */
+}
+
+.logo{
+  width: 160px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.sec{
+  position: relative;
+  background: #0f0f0f;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.star{
+  position: absolute;
+  background: #0f0f0f;
+}
+.star::before{
+  content: '\f005';
+  font-family: fontAwesome;
+}
+.star.animate{
+  color: #0f0;
+  text-shadow: 0 0 5px #0f0, 0 0 20px #0f0, 0 0 50px #0f0
+}

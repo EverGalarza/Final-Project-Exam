@@ -1,0 +1,71 @@
+.contact-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  background-color: #292b2c; /* Dark mode background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust shadow color */
+  width: 90%; /* Further expanding the width */
+  max-width: 800px; /* Set a maximum width if needed */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background-color: #383d41; /* Dark mode input background color */
+  color: #fff; /* Input text color */
+  border: 1px solid #ced4da; /* Input border color */
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.thank-you-message {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #28a745; /* Green color for success */
+}
+
+.navbar-nav {
+  margin-right: 100px; /* Increase margin between navbar elements */
+}
+
+.navbar {
+  background-color: #000; /* Set full black background color for the navbar */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust the margin between each navbar item */
+}
+
+.navbar-nav .nav-link {
+  color: green; /* Set the font color for inactive elements */
+}
+
+.navbar-nav .nav-link.active {
+  color: teal; /* Set the font color for the active element */
+}
+
+.navbar-brand img {
+  margin-right: 20px; /* Adjust margin to move the logo more to the left */
+}
