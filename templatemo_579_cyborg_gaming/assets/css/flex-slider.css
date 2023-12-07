@@ -191,7 +191,7 @@ html[xmlns] .flexslider .slides {
   font-family: "flexslider-icon";
   font-size: 20px;
   display: inline-block;
-  content: '\f004';
+  content: "\f004";
 }
 .flex-pauseplay a:hover {
   opacity: 1;
@@ -209,7 +209,7 @@ html[xmlns] .flexslider .slides {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .flex-control-paging li a {
   width: 11px;
